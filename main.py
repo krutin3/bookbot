@@ -1,5 +1,5 @@
-def main():
-    book_path = "books/frankenstein.txt"
+def main(path_to_book_txt):
+    book_path = path_to_book_txt
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     char_dict = get_num_char(text)
@@ -46,4 +46,4 @@ def get_sorted_list(unsorted_dict):
 
 
 
-main()
+main("books/frankenstein.txt")
